@@ -45,17 +45,17 @@ div.card {
     border-radius: 20px;
 }
 
-/* Section - summary */
-div.card section.summary {
+/* div - summary */
+div.card div.summary {
     margin-top: 30px;
 }
-div.card section.summary p {
+div.card div.summary p {
     margin-top: 10px;
 }
 
 
-/* Section annual plan */
-div.card section.annual-plan {
+/* div annual plan */
+div.card div.annual-plan {
     margin-top: 30px;
     padding: 10px 20px 10px 70px;
     border-radius: 10px;
@@ -65,22 +65,22 @@ div.card section.annual-plan {
     align-items: center;
     justify-content: space-between;
 }
-div.card section.annual-plan > a {
+div.card div.annual-plan > a {
     color: var(--bright-blue);
     font-weight: 700;
     font-size: 1em;
 }
-div.card section.annual-plan > a:hover{
+div.card div.annual-plan > a:hover{
     text-decoration: none;
     color: hsl(245, 62%, 65%);
 }
 
-/* Section pay or cancel */
-div.card section.pay-or-cancel {
+/* div pay or cancel */
+div.card div.pay-or-cancel {
     margin-top: 30px;
 }
 
-div.card section.pay-or-cancel button:nth-child(1) {
+div.card div.pay-or-cancel button:nth-child(1) {
     width: 100%;
     padding: 20px 0;
     border:none;
@@ -90,11 +90,11 @@ div.card section.pay-or-cancel button:nth-child(1) {
     font-weight: 700;
     box-shadow: 0 20px 20px hsla(245, 75%, 52%, 0.342);
 }
-div.card section.pay-or-cancel button:nth-child(1):hover {
+div.card div.pay-or-cancel button:nth-child(1):hover {
     background-color: hsl(245, 62%, 65%);
 }
 
-div.card section.pay-or-cancel a {
+div.card div.pay-or-cancel a {
     display: block;
     width: 100%;
     margin-top: 25px;
@@ -103,7 +103,7 @@ div.card section.pay-or-cancel a {
     color: var(--desaturated-blue);
     text-decoration: none;
 }
-div.card section.pay-or-cancel a:hover {
+div.card div.pay-or-cancel a:hover {
     color: #000;
 }
 
