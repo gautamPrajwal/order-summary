@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --desktop-bg: hsl(225, 100%, 94%) url('../images/pattern-background-desktop.svg') no-repeat top left;
+    --mobile-bg: hsl(225, 100%, 94%) url('../images/pattern-background-mobile.svg') no-repeat top left;
+    --font-used: 'Red Hat Display', sans-serif;
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+*,
+*::after,
+*::before {
+    padding: 0; margin: 0; box-sizing: border-box;
+}
+
+body{
+    max-width: 1440px;
+    margin: 0 auto; padding: 10% 0;
+    background: var(--desktop-bg);
+    background-size: 100%;
+    font-family: var(--font-used);
+    font-size: 16px; font-weight: 500;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p{ font-size: 1em; color: var(--desaturated-blue); }
+h2 { font-size: 2em; font-weight: 900; color: var(--dark-blue); }
+h3 { font-size: 1.1em; font-weight: 700; color: var(--dark-blue); }
+
+
+/* The Card */
+div.card {
+    height: auto;
+    max-width: 400px;
+    padding: 200px 30px 30px 30px;
+    background: #fff url('../images/illustration-hero.svg') no-repeat top left;
+    background-size: contain;
+    text-align: center;
+    border-radius: 20px;
+}
+
+/* Section - summary */
+div.card section.summary {
+    margin-top: 30px;
+}
+div.card section.summary p {
+    margin-top: 10px;
+}
+
+
+/* Section annual plan */
+div.card section.annual-plan {
+    margin-top: 30px;
+    padding: 10px 20px 10px 70px;
+    border-radius: 10px;
+    min-height: 70px;
+    background: var(--very-pale-blue) url('../images/icon-music.svg') no-repeat 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+div.card section.annual-plan > a {
+    color: var(--bright-blue);
+    font-weight: 700;
+    font-size: 1em;
+}
+div.card section.annual-plan > a:hover{
+    text-decoration: none;
+    color: hsl(245, 62%, 65%);
+}
+
+/* Section pay or cancel */
+div.card section.pay-or-cancel {
+    margin-top: 30px;
+}
+
+div.card section.pay-or-cancel button:nth-child(1) {
+    width: 100%;
+    padding: 20px 0;
+    border:none;
+    border-radius: 10px;
+    background-color: var(--bright-blue);
+    color: #fff;
+    font-weight: 700;
+    box-shadow: 0 20px 20px hsla(245, 75%, 52%, 0.342);
+}
+div.card section.pay-or-cancel button:nth-child(1):hover {
+    background-color: hsl(245, 62%, 65%);
+}
+
+div.card section.pay-or-cancel a {
+    display: block;
+    width: 100%;
+    margin-top: 25px;
+    font-weight: 700;
+    font-size: 1em;
+    color: var(--desaturated-blue);
+    text-decoration: none;
+}
+div.card section.pay-or-cancel a:hover {
+    color: #000;
+}
+
+/* Footer Div attribution */
+.attribution { 
+    font-size: 11px; text-align: center;
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    bottom: 0px; left: 0px;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+/* Smaller Screen */
+@media screen and (max-width: 375px ){
+    body{
+        min-width: 375px;
+        padding-left: 10px; padding-right: 10px;
+        background-image: var(--mobile-bg);
+    }
+    div.card{
+        max-width: 350px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
