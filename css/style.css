@@ -30,12 +30,12 @@ body{
 }
 
 p{ font-size: 1em; color: var(--desaturated-blue); }
-h2 { font-size: 2em; font-weight: 900; color: var(--dark-blue); }
+h1 { font-size: 2em; font-weight: 900; color: var(--dark-blue); }
 h3 { font-size: 1.1em; font-weight: 700; color: var(--dark-blue); }
 
 
-/* The Card */
-div.card {
+/* Main - The Card */
+main {
     height: auto;
     max-width: 400px;
     padding: 200px 30px 30px 30px;
@@ -46,16 +46,16 @@ div.card {
 }
 
 /* div - summary */
-div.card div.summary {
+main div.summary {
     margin-top: 30px;
 }
-div.card div.summary p {
+main div.summary p {
     margin-top: 10px;
 }
 
 
 /* div annual plan */
-div.card div.annual-plan {
+main div.annual-plan {
     margin-top: 30px;
     padding: 10px 20px 10px 70px;
     border-radius: 10px;
@@ -65,22 +65,22 @@ div.card div.annual-plan {
     align-items: center;
     justify-content: space-between;
 }
-div.card div.annual-plan > a {
+main div.annual-plan > a {
     color: var(--bright-blue);
     font-weight: 700;
     font-size: 1em;
 }
-div.card div.annual-plan > a:hover{
+main div.annual-plan > a:hover{
     text-decoration: none;
     color: hsl(245, 62%, 65%);
 }
 
 /* div pay or cancel */
-div.card div.pay-or-cancel {
+main div.pay-or-cancel {
     margin-top: 30px;
 }
 
-div.card div.pay-or-cancel button:nth-child(1) {
+main div.pay-or-cancel button:nth-child(1) {
     width: 100%;
     padding: 20px 0;
     border:none;
@@ -90,11 +90,11 @@ div.card div.pay-or-cancel button:nth-child(1) {
     font-weight: 700;
     box-shadow: 0 20px 20px hsla(245, 75%, 52%, 0.342);
 }
-div.card div.pay-or-cancel button:nth-child(1):hover {
+main div.pay-or-cancel button:nth-child(1):hover {
     background-color: hsl(245, 62%, 65%);
 }
 
-div.card div.pay-or-cancel a {
+main div.pay-or-cancel a {
     display: block;
     width: 100%;
     margin-top: 25px;
@@ -103,7 +103,7 @@ div.card div.pay-or-cancel a {
     color: var(--desaturated-blue);
     text-decoration: none;
 }
-div.card div.pay-or-cancel a:hover {
+main div.pay-or-cancel a:hover {
     color: #000;
 }
 
@@ -126,7 +126,7 @@ div.card div.pay-or-cancel a:hover {
         padding-left: 10px; padding-right: 10px;
         background-image: var(--mobile-bg);
     }
-    div.card{
+    main{
         max-width: 350px;
     }
 }
